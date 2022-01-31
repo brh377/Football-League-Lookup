@@ -1,0 +1,20 @@
+.name{
+    background-color: #f9f5f3;
+    color: black;
+    width: 100px;
+    display: flex;
+    padding: 5px 10px;
+    height:initial;
+    font-size: 12px;
+    border-right: solid rgb(105, 97, 97) 2px;
+    border-bottom: solid rgb(105, 97, 97) 2px;
+    align-items: center;
+    justify-content: center;
+    transition: .1s;
+}
+.name:hover{
+    background-color: #303f9f;
+    cursor: pointer;
+    font-weight: 700;
+    color: black;
+}

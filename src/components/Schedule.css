@@ -1,0 +1,80 @@
+.top-container{
+    overflow: auto;
+    height: 90vh;
+    border-radius: 0 45px 45px 0;
+    display: flex;
+}
+/* Container Scrollbar */
+.top-container::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+.top-container::-webkit-scrollbar-track-piece:start{
+    background: transparent;
+}
+.top-container::-webkit-scrollbar-track-piece:end{
+    background: transparent;
+}
+/*---------------------*/
+.all-games{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 50px;
+}
+.game-container{
+    background-color:  rgb(41,41,41);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    padding: 30px 0;
+    transition: 0.2s;
+}
+.game-container:hover{
+    background-color: rgb(49, 49, 49);
+    cursor: pointer;
+}
+
+.game-container:nth-child(odd){
+    background-color: rgb(41, 36, 36);
+}
+.game-container:nth-child(odd):hover{
+background-color: rgba(41, 36, 36, 0.698);
+}
+
+.game-container span{
+    padding: 0 20px;
+}
+.team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.team img{
+    width: 100%;
+    max-width: 130px;
+    height: auto;
+    margin: 0 10px;
+}
+.scores{
+    padding: 0 10%;
+}
+
+/* Media Queries */
+@media screen and (max-width:687px){
+    .game-container .team:first-child{
+        flex-direction: column;
+        padding-left: 10px;
+    }
+    .game-container .team:last-child{
+        flex-direction: column-reverse;
+        padding-right: 10px;
+    }
+    .top-container{
+        border-radius: 0;
+        height: 100%;
+    }
+}

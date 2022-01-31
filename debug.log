@@ -1,0 +1,27 @@
+[0831/130908.634:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0831/130908.634:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0831/130908.634:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0901/070924.104:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0901/070924.104:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0901/070924.104:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0919/233959.580:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0919/233959.580:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0919/233959.580:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[1005/095127.787:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[1005/095127.787:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[1005/095127.787:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[1013/114232.573:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1014/132656.608:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1020/190702.072:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1022/234107.098:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1022/234107.102:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1022/234107.109:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1022/234107.143:ERROR:exception_snapshot_win.cc(99)] thread ID 17652 not found in process
+[1022/234107.098:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1022/234107.098:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1022/234107.143:ERROR:exception_snapshot_win.cc(99)] thread ID 8396 not found in process
+[1022/234107.098:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1022/234107.144:ERROR:exception_snapshot_win.cc(99)] thread ID 9276 not found in process
+[1022/234107.144:ERROR:exception_snapshot_win.cc(99)] thread ID 3188 not found in process
+[1022/234107.144:ERROR:exception_snapshot_win.cc(99)] thread ID 7724 not found in process
+[1022/234107.144:ERROR:exception_snapshot_win.cc(99)] thread ID 16136 not found in process

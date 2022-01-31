@@ -1,0 +1,49 @@
+
+
+.league-name{
+    display: flex;
+    border-radius: 10px;
+    float: left;
+    align-items: center;
+    cursor: pointer;
+    background-color:rgb(226, 226, 226);
+    margin-bottom: 10px;
+    margin-right: 10px;
+    min-width: 150px;
+    justify-content: space-around;
+    min-height: 60px;
+    width: 100%;
+}
+.league-logo{
+    width:20%;
+    margin-right: 10px;
+    padding-left: 10px
+}
+.league-logo img{
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.league-name p{
+    margin-left: 2%;
+    text-align: center;
+    color: rgb(11, 19, 43);
+    width: 70%;
+    font-size: 1rem;
+}
+.league-name:hover p{
+    color: rgb(226, 109, 90);
+    transition: ease-out color 100ms;
+}
+.league-name:hover{
+    background-color: rgba(183, 206, 206,.4);
+    transition: ease-out background-color 100ms;
+}
+
+@media screen and (min-width:1024px){
+    .league-name{
+        min-width: 25%;
+        
+    }
+}

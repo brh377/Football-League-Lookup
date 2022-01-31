@@ -1,0 +1,29 @@
+.sidebarOption{ 
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding: 50% 0;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: rgb(1, 23, 47);
+    transition: 0.2s;
+}
+
+.sidebarOption:hover{
+    background-color: rgba(75, 55, 30, 0.5);
+    cursor: pointer;
+}
+.sidebarOption:hover:first-child{
+    border-radius: 45px 0 0 0;
+}
+
+.sidebarOption:hover:last-child{
+    border-radius: 0 0 0 45px;
+}
+
+@media screen and (max-width:687px){
+    .sidebarOption:hover:first-child,.sidebarOption:hover:last-child{
+        border-radius: 0;
+    }
+}

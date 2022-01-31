@@ -1,0 +1,167 @@
+.info-league-container{
+    display: block;
+    flex-direction: column;
+    height: 90vh;
+    align-items: center;
+}
+.info-league-container h2{
+    margin-top: 0;
+}
+.table-page{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    height: inherit;
+}
+
+.info-left{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: linear-gradient(217deg, rgba(41,41,41,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(140, 134, 170,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(17, 29, 65,.8), rgba(0,0,255,0) 70.71%);
+    border-radius: 0 45px 0 0;
+    color:rgba(255, 255, 255, 0.739);
+    font-size: 2vw;
+    text-shadow: 2px 2px 5px rgba(148, 191, 167,.35);
+}
+
+.league-header{
+    font-size: 4.5vw;
+}
+
+.info-left p{
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 3vw;
+}
+.info-left img{
+    width: 20%;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.slot-1{
+    display: flex !important;
+    border-right: solid 2px rgba(160, 174, 207,1);
+    align-items: center;
+    border-bottom: none !important; 
+}
+.slot-1:hover{
+    background-color: rgb(49, 49, 49);
+}
+.slot-1 a{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color: whitesmoke;
+}
+.slot-1 a:hover{
+    cursor: pointer;
+}
+.rank-name:hover{
+    color: rgba(140, 134, 170,.8)
+}
+
+.rank-number{
+    margin-right: 10px;
+    padding-top: 12px;
+    margin-left: 10px;
+    font-size: .75rem;
+}
+.rank-name{
+    margin-left: 10px;
+    font-size: .75rem;
+}
+.rank-slot img{
+    width: 50px;
+    height: 50px;
+    min-width: 30px;
+    min-height: 30px;
+}
+.right-roster{
+    
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    border-radius: 0 0 45px 0;
+}
+.right-roster::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+.right-roster::-webkit-scrollbar-track-piece:start{
+    background: transparent;
+}
+.right-roster::-webkit-scrollbar-track-piece:end{
+    background: transparent;
+}
+
+.stats{
+    display: flex;
+    text-align: center;
+    height: 50px;
+    color: white;
+}
+.stats span{
+    margin: 0;
+    padding: 0;
+    border-right: solid 2px rgba(160, 174, 207, .25);
+    height: 100%;
+    width: 60px;
+    list-style: none;
+    
+}
+
+
+.MuiTableCell-root{
+    font-size: .75rem!important;
+    padding: 10px 16px!important;
+    
+}
+.rank-slot:last-child .MuiTableCell-root{
+    border-bottom: none;
+}
+
+.MuiTableBody-root{
+    background-color:  rgb(41,41,41);
+    
+}
+.MuiTableRow-root:nth-child(odd){
+    background-color: rgb(41, 36, 36);
+}
+
+.MuiTableCell-body{
+    color: whitesmoke !important;
+}
+
+/*---Error Handling*/
+.league-error{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+
+@media screen and (max-width:687px){
+    .info-left{
+        flex-direction: column;
+        
+    }
+    .info-left,.right-roster{
+        border-radius: 0;
+    }
+    .info-league-container{
+        height: 100%;
+    }
+}

@@ -1,0 +1,24 @@
+.options{
+    display: flex;
+    position: absolute;
+    color: rgb(1, 23, 47) !important;
+    height: inherit;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    background-color: rgb(226, 226, 226);
+    width: 50px;
+    min-width: 37px;
+    border-radius: 45px 0px 0px 45px;
+    
+}
+/* For LeagueInfo single icon nav */
+.options a:only-child:hover{
+    border-radius: 45px 0 0 45px;
+}
+
+@media screen and (max-width:687px){
+    .options{
+        border-radius: 0;
+    }
+}
