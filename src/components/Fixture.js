@@ -75,13 +75,16 @@ class Fixture extends React.Component{
             </div>
         )
     }
-    
+
     showLinup(){
         const {game} = this.props.location.state;
         let starters = [];
         let subs = [];
-        
-        if (this.props.fixture) {
+
+        /* Checks if match has stats */
+        if (!(this.props.fixture) || this.props.fixture.length === 0) {
+            return <h1>Stats are not avalable for this match</h1>
+        }else{
             starters[0] = this.props.fixture[0].startXI.map( player =>{
                 
                 return <div className="player-info" key={player.player.id} stats = {this.props.fixture[player]}>
@@ -152,7 +155,8 @@ class Fixture extends React.Component{
             </div>
         )
         
-    }}
+        }
+}
 
     render(){
         return(

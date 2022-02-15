@@ -1,4 +1,6 @@
 import axios from 'axios';
+require('dotenv').config();
+const api_key = process.env.REACT_APP_X_RAPIDAPI_KEY
 
 export const leagueData = code => async (dispatch) =>{
     
@@ -8,7 +10,7 @@ export const leagueData = code => async (dispatch) =>{
         "headers":{
         "content-type":"application/octet-stream",
         "x-rapidapi-host":"api-football-v1.p.rapidapi.com",
-        "x-rapidapi-key":"8304ed29a1mshd37efc65a1b5296p131d2fjsne7b87593383f",
+        "x-rapidapi-key":`${api_key}`,
         "useQueryString":true
         }
         })
@@ -26,7 +28,7 @@ export const fetchCountry = () => async (dispatch) =>{
         "headers":{
         "content-type":"application/octet-stream",
         "x-rapidapi-host":"api-football-v1.p.rapidapi.com",
-        "x-rapidapi-key":"8304ed29a1mshd37efc65a1b5296p131d2fjsne7b87593383f",
+        "x-rapidapi-key":`${api_key}`,
         "Access-Control-Allow-Origin":"*",
         "useQueryString":true
         }
@@ -50,7 +52,7 @@ export const fetchStandings = (league_id) => async (dispatch) =>{
         "url":`https://rapidapi.p.rapidapi.com/v2/leagueTable/${league_id}`,
         "headers":{
         "x-rapidapi-host":"api-football-v1.p.rapidapi.com",
-        "x-rapidapi-key":"8304ed29a1mshd37efc65a1b5296p131d2fjsne7b87593383f",
+        "x-rapidapi-key":`${api_key}`,
         }
         })
         .then((response)=>{
@@ -79,7 +81,7 @@ export const fetchStandings = (league_id) => async (dispatch) =>{
             url: `https://api-football-v1.p.rapidapi.com/v2/fixtures/team/${team_id}/${league_id}`,
             params: {timezone: 'Europe/London'},
             headers: {
-                'x-rapidapi-key': '8304ed29a1mshd37efc65a1b5296p131d2fjsne7b87593383f',
+                'x-rapidapi-key': `${api_key}`,
                 'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
             }
         })
@@ -97,7 +99,7 @@ export const fetchStandings = (league_id) => async (dispatch) =>{
             url: 'https://api-football-v1.p.rapidapi.com/v3/fixtures/lineups',
             params: {fixture: fixture_id},
             headers: {
-                'x-rapidapi-key': '8304ed29a1mshd37efc65a1b5296p131d2fjsne7b87593383f',
+                'x-rapidapi-key': `${api_key}`,
                 'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
             }
         })
@@ -116,12 +118,11 @@ export const fetchStandings = (league_id) => async (dispatch) =>{
             method: 'GET',
             url: `https://api-football-v1.p.rapidapi.com/v2/players/fixture/${fixture_id}`,
             headers: {
-                'x-rapidapi-key': '8304ed29a1mshd37efc65a1b5296p131d2fjsne7b87593383f',
+                'x-rapidapi-key': `${api_key}`,
                 'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
             }
         })
         .then((response)=>{
-            console.log(response.data.api.players)
             dispatch({type:'FETCH_STATS',payload:response.data.api.players});
 
         })
